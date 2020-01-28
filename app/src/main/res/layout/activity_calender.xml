@@ -49,16 +49,19 @@
         android:layout_marginTop="10dp"
         android:orientation="vertical">
         <EditText
+            android:id="@+id/event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Event"></EditText>
         <EditText
+            android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Loctaion"></EditText>
 
         <Button
             android:id="@+id/save"
+            android:onClick="save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save appointment"

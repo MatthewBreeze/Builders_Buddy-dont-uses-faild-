@@ -1,10 +1,10 @@
 package com.example.buildersbuddy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -31,4 +31,9 @@ public class Home_Page extends AppCompatActivity {
         finish();
     }
 
+
+    public void Calender(View view) {
+        startActivity(new Intent(getApplicationContext(),Calender.class));
+        finish();
+    }
 }

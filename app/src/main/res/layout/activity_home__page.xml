@@ -51,6 +51,7 @@
         android:layout_marginTop="124dp"
         android:layout_marginBottom="123dp"
         android:text="Calender"
+        android:onClick="Calender"
         app:layout_constraintBottom_toBottomOf="@+id/button7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Tax" />
