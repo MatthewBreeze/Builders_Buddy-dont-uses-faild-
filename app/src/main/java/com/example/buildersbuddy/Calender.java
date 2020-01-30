@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,8 +29,6 @@ public class Calender extends AppCompatActivity {
     DatabaseReference mDatabase;
     CalendarView calendarView;
     EditText Event, location;
-    TextView myDate;
-    String date;
     Button saveevent;
     Events events;
     Button save;
@@ -52,7 +49,7 @@ public class Calender extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(),Sign_In.class));
             finish();
         }
-        calendarView =  findViewById(R.id.calender);
+        calendarView =  findViewById(R.id.calendar);
         Event = findViewById(R.id.event);
         location = findViewById(R.id.location);
         saveevent = findViewById(R.id.save);
@@ -91,6 +88,12 @@ public class Calender extends AppCompatActivity {
                 events.setLocation(elocation);
                 mDatabase.push().setValue(events);
 
+    }
+
+    public void View(View view)
+    {
+        startActivity(new Intent(getApplicationContext(), EventsList.class));
+        finish();
     }
 }
 
