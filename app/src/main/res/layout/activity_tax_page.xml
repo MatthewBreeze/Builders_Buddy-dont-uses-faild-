@@ -1,49 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Home_Page"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".tax.TaxPage"
+    android:orientation="vertical"
     android:background="@android:color/holo_orange_light"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home page"
-        android:layout_gravity="center"
-        android:textSize="30dp"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        >
-    </TextView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
         >
-
-
         <Button
             android:layout_width="175dp"
             android:layout_height="100dp"
+            android:padding="10dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="10dp"
-            android:padding="10dp"
-            android:text="Tax"
-            android:onClick="TaxPage"
+            android:text="New receipt"
             >
-
-
         </Button>
 
         <Button
             android:layout_width="175dp"
             android:layout_height="100dp"
-            android:text="Jobs"
-            android:onClick="JobsList"
+            android:text="Money Spent"
 
             >
 
@@ -64,19 +49,16 @@
             android:padding="10dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="10dp"
-            android:text="Calander"
-            android:onClick="Calender"
-
+            android:text="Income"
             >
         </Button>
 
         <Button
             android:layout_width="175dp"
             android:layout_height="100dp"
-            android:text="Trade Cards"
-            android:onClick="TradeCards"
-
+            android:text="Recepit's"
             >
+
         </Button>
 
 
@@ -129,7 +111,6 @@
             android:layout_width="175dp"
             android:layout_height="100dp"
             android:text="Logout"
-            android:onClick="Logout"
             >
 
         </Button>

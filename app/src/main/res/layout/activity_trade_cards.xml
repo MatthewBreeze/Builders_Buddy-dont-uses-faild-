@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Events.EventsList"
+    tools:context=".TradsCard.TradeCards"
     android:orientation="vertical"
     android:background="@android:color/holo_orange_light"
     >
@@ -13,32 +13,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="8dp">
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:text="add Card"
+            android:onClick="AddCard"
+            >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="center"
-            android:text="Job List"
-            android:textSize="18dp"
-            android:layout_weight="3"
-            android:textStyle="bold"
-            />
+        </Button>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:text="remove Card"
+
+            >
+
+        </Button>
+
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-
-        >
+        android:layout_height="wrap_content">
         <ListView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ListView">
-
+            android:layout_height="wrap_content">
         </ListView>
 
 

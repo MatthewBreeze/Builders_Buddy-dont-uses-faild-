@@ -11,9 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EventPage"></activity>
-        <activity android:name=".EventsList" />
-        <activity android:name=".Calender" />
+        <activity android:name=".TradsCard.RemoveCard"></activity>
+        <activity android:name=".TradsCard.AddCard" />
+        <activity android:name=".tax.TaxPage" />
+        <activity android:name=".TradsCard.TradeCards" />
+        <activity android:name=".Events.EventPage" />
+        <activity android:name=".Events.EventsList" />
+        <activity android:name=".Events.Calender" />
         <activity android:name=".Home_Page" />
         <activity android:name=".Register" />
         <activity android:name=".Sign_In">

@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Calender"
-    android:orientation="vertical">
+    tools:context=".Events.Calender"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_light"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +24,8 @@
             android:textSize="18dp"
             android:layout_weight="3"
             android:textStyle="bold"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
             />
 
 
@@ -52,12 +56,17 @@
             android:id="@+id/event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Event"></EditText>
+            android:hint="Event"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black">
+        </EditText>
         <EditText
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Loctaion"></EditText>
+            android:hint="Loctaion"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"></EditText>
 
         <Button
             android:id="@+id/save"
@@ -65,6 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save appointment"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
             ></Button>
         <Button
             android:id="@+id/View"
@@ -72,7 +83,8 @@
             android:layout_height="wrap_content"
             android:text="View Events"
             android:onClick="View"
-
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
             >
         </Button>
     </LinearLayout>

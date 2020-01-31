@@ -1,6 +1,8 @@
-package com.example.buildersbuddy;
+package com.example.buildersbuddy.Events;
 
 import android.os.Bundle;
+
+import com.example.buildersbuddy.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
