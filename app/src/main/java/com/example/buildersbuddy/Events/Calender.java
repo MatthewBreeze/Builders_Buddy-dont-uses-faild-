@@ -30,7 +30,7 @@ public class Calender extends AppCompatActivity {
 // ...
     DatabaseReference mDatabase;
     CalendarView calendarView;
-    EditText Event, location;
+    EditText Event, location, time;
     Button saveevent;
     Events events;
     Button save;
@@ -55,8 +55,21 @@ public class Calender extends AppCompatActivity {
         Event = findViewById(R.id.event);
         location = findViewById(R.id.location);
         saveevent = findViewById(R.id.save);
+        time = findViewById(R.id.time);
         events = new Events();
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Events");
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
+        {
+            @Override
+            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2)
+            {
+                String date = i2 + "/" + (i1 + 1 ) +"/" + i;
+                Toast.makeText(Calender.this, "you have set a event for "+ date ,Toast.LENGTH_LONG).show();
+                events.setDate(date);
+
+            }
+        });
+
     }
     public void save(View view)
     {
@@ -64,17 +77,8 @@ public class Calender extends AppCompatActivity {
                 calendarView.getDate();
                 String event = Event.getText().toString().trim();
                 String date ;
+                String jobTime = time.getText().toString().trim();
 
-                calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
-                {
-                    @Override
-                    public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2)
-                    {
-                       String date = i2 + "/" + (i1 + 1 ) +"/" + i;
-                       Toast.makeText(Calender.this, "you have set a event for "+ date ,Toast.LENGTH_LONG).show();
-                       events.setDate(date);
-                    }
-                });
                 if(TextUtils.isEmpty(event))
                 {
                     Event.setError("you must enter a event");
@@ -85,6 +89,7 @@ public class Calender extends AppCompatActivity {
                 {
                     location.setError("you must set a location");
                 }
+                events.setTime(jobTime);
                 events.setId(id);
                 events.setEvent(event);
                 events.setLocation(elocation);

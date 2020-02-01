@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.buildersbuddy">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Events.Event"></activity>
         <activity android:name=".TradsCard.RemoveCard"></activity>
         <activity android:name=".TradsCard.AddCard" />
         <activity android:name=".tax.TaxPage" />
         <activity android:name=".TradsCard.TradeCards" />
-        <activity android:name=".Events.EventPage" />
         <activity android:name=".Events.EventsList" />
         <activity android:name=".Events.Calender" />
-        <activity android:name=".Home_Page" />
+        <activity android:name=".Home_Page"  />
         <activity android:name=".Register" />
         <activity android:name=".Sign_In">
             <intent-filter>
@@ -26,7 +24,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
