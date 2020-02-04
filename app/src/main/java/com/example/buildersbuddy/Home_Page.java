@@ -9,9 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.example.buildersbuddy.Events.Calender;
 import com.example.buildersbuddy.TradsCard.TradeCards;
 import com.example.buildersbuddy.tax.TaxPage;
+=======
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 =======
 >>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 =======

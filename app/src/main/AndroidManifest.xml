@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".Events.Event"></activity>
         <activity android:name=".TradsCard.RemoveCard"></activity>
         <activity android:name=".TradsCard.AddCard" />
@@ -21,6 +22,8 @@
         <activity android:name=".Events.Calender" />
         <activity android:name=".Home_Page"  />
 =======
+=======
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 =======
 >>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 =======

@@ -60,6 +60,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:hint="Loctaion"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"></EditText>
@@ -71,6 +72,9 @@
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"></EditText>
 
+=======
+            android:hint="Loctaion"></EditText>
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 =======
             android:hint="Loctaion"></EditText>
 >>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
