@@ -5,11 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:context=".Events.EventsList"
     android:orientation="vertical"
     android:background="@android:color/holo_orange_light"
 
     >
+=======
+    tools:context=".EventsList"
+    android:orientation="vertical">
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 =======
     tools:context=".EventsList"
     android:orientation="vertical">
