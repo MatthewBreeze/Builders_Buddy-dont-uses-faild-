@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Events.Calender"
-    android:orientation="vertical"
-    android:background="@android:color/holo_orange_light"
-    >
+    tools:context=".Calender"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +22,6 @@
             android:textSize="18dp"
             android:layout_weight="3"
             android:textStyle="bold"
-            android:textColorHint="@android:color/black"
-            android:textColor="@android:color/black"
             />
 
 
@@ -56,14 +52,12 @@
             android:id="@+id/event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Event"
-            android:textColorHint="@android:color/black"
-            android:textColor="@android:color/black">
-        </EditText>
+            android:hint="Event"></EditText>
         <EditText
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:hint="Loctaion"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"></EditText>
@@ -75,6 +69,9 @@
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"></EditText>
 
+=======
+            android:hint="Loctaion"></EditText>
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 
         <Button
             android:id="@+id/save"
@@ -82,8 +79,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save appointment"
-            android:textColorHint="@android:color/black"
-            android:textColor="@android:color/black"
             ></Button>
         <Button
             android:id="@+id/View"
@@ -91,8 +86,7 @@
             android:layout_height="wrap_content"
             android:text="View Events"
             android:onClick="View"
-            android:textColorHint="@android:color/black"
-            android:textColor="@android:color/black"
+
             >
         </Button>
     </LinearLayout>

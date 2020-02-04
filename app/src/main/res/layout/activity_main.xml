@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sign_In"
-    android:background="@android:color/holo_orange_light"
-    >
+    tools:context=".Sign_In">
 
     <EditText
         android:id="@+id/Email"

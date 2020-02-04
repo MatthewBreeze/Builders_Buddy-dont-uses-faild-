@@ -1,4 +1,4 @@
-package com.example.buildersbuddy.Events;
+package com.example.buildersbuddy;
 
 public class Events
 {

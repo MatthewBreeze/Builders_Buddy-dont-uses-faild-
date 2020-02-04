@@ -1,4 +1,4 @@
-package com.example.buildersbuddy.Events;
+package com.example.buildersbuddy;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,8 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.buildersbuddy.R;
-import com.example.buildersbuddy.Sign_In;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -48,7 +46,7 @@ public class Calender extends AppCompatActivity {
         Auth = FirebaseAuth.getInstance();
         if(Auth.getCurrentUser()== null)
         {
-            startActivity(new Intent(getApplicationContext(), Sign_In.class));
+            startActivity(new Intent(getApplicationContext(),Sign_In.class));
             finish();
         }
         calendarView =  findViewById(R.id.calendar);

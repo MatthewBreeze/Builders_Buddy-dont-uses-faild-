@@ -1,4 +1,4 @@
-package com.example.buildersbuddy.Events;
+package com.example.buildersbuddy;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,10 +14,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.MenuItemCompat;
 
+<<<<<<< HEAD:app/src/main/java/com/example/buildersbuddy/Events/EventsList.java
 import com.example.buildersbuddy.Home_Page;
 import com.example.buildersbuddy.R;
 import com.example.buildersbuddy.TradsCard.TradeCards;
 import com.google.firebase.FirebaseApp;
+=======
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting:app/src/main/java/com/example/buildersbuddy/EventsList.java
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -43,6 +46,7 @@ public class EventsList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events_list);
+<<<<<<< HEAD:app/src/main/java/com/example/buildersbuddy/Events/EventsList.java
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         events = new Events();
@@ -64,6 +68,20 @@ public class EventsList extends AppCompatActivity {
 
 
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+=======
+        Auth = FirebaseAuth.getInstance();
+        if(Auth.getCurrentUser()== null)
+        {
+            startActivity(new Intent(getApplicationContext(),Sign_In.class));
+            finish();
+        }
+
+        cEevents = new Events();
+        List = new ArrayList<>();
+        adapter = new ArrayAdapter<String>(this,R.layout.event_info,R.id.ListView, List);
+        ListView.setAdapter(adapter);
+        mDatabase.addValueEventListener(new ValueEventListener() {
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting:app/src/main/java/com/example/buildersbuddy/EventsList.java
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {

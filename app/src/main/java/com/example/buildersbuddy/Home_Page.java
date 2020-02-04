@@ -6,9 +6,12 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import com.example.buildersbuddy.Events.Calender;
 import com.example.buildersbuddy.TradsCard.TradeCards;
 import com.example.buildersbuddy.tax.TaxPage;
+=======
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Home_Page extends AppCompatActivity {
@@ -25,6 +28,8 @@ public class Home_Page extends AppCompatActivity {
             finish();
         }
     }
+
+
     public void Logout(View view)
     {
         FirebaseAuth.getInstance().signOut();
@@ -32,23 +37,9 @@ public class Home_Page extends AppCompatActivity {
         finish();
     }
 
+
     public void Calender(View view) {
-        startActivity(new Intent(getApplicationContext(), Calender.class));
-        finish();
-    }
-
-    public void TradeCards(View view) {
-        startActivity(new Intent(getApplicationContext(), TradeCards.class));
-        finish();
-    }
-
-    public void TaxPage(View view) {
-        startActivity(new Intent(getApplicationContext(), TaxPage.class));
-        finish();
-    }
-
-    public void JobsList(View view) {
-        startActivity(new Intent(getApplicationContext(),TaxPage.class));
+        startActivity(new Intent(getApplicationContext(),Calender.class));
         finish();
     }
 }

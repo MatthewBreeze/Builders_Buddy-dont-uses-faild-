@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Events.Event"></activity>
         <activity android:name=".TradsCard.RemoveCard"></activity>
         <activity android:name=".TradsCard.AddCard" />
@@ -17,6 +18,12 @@
         <activity android:name=".Events.EventsList" />
         <activity android:name=".Events.Calender" />
         <activity android:name=".Home_Page"  />
+=======
+        <activity android:name=".EventPage"></activity>
+        <activity android:name=".EventsList" />
+        <activity android:name=".Calender" />
+        <activity android:name=".Home_Page" />
+>>>>>>> parent of c0006e8... Layout and pages. code needs implemeting
         <activity android:name=".Register" />
         <activity android:name=".Sign_In">
             <intent-filter>
