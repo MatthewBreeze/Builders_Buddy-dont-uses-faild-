@@ -1,91 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/logoutbtn"
+    tools:context=".Home_Page"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Page">
+    android:background="@android:color/holo_orange_light"
+    >
 
-    <Button
-        android:id="@+id/button"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="635dp"
-        android:layout_marginBottom="48dp"
-        android:onClick="Logout"
-        android:text="Log out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Tax"
-        android:layout_width="wrap_content"
+        android:text="Home page"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
-        android:text="tax"
-        app:layout_constraintEnd_toEndOf="@+id/Calender"
-        app:layout_constraintStart_toStartOf="@+id/Calender"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
 
-    <Button
-        android:id="@+id/Job"
-        android:layout_width="wrap_content"
+
+        <ImageButton
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="Tax"
+            android:onClick="TaxPage"
+            android:background="@drawable/recp"
+
+
+            >
+
+
+        </ImageButton>
+
+
+
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:text="Jobs"
+            android:onClick="JobsList"
+
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:text="Jobs"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
 
-    <Button
-        android:id="@+id/Calender"
-        android:layout_width="wrap_content"
+        >
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:text="Calander"
+            android:onClick="Calender"
+
+            >
+        </Button>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:text="Trade Cards"
+            android:onClick="TradeCards"
+
+            >
+        </Button>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="123dp"
-        android:text="Calender"
-        android:onClick="Calender"
-        app:layout_constraintBottom_toBottomOf="@+id/button7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Tax" />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:text="filler"
+            >
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        </Button>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:text="filler"
+            >
+        </Button>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="178dp"
-        android:text="button"
-        app:layout_constraintEnd_toEndOf="@+id/button7"
-        app:layout_constraintStart_toStartOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="71dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Calender" />
+        >
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:text="filler"
+            >
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        </Button>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:text="Logout"
+            android:onClick="Logout"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+</LinearLayout>
